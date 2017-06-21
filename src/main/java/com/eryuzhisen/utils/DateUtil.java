@@ -1383,7 +1383,7 @@ public class DateUtil {
         }else {  
             //大于24小时，则显示正常的时间，但是不显示秒 
             if(isSameYear(createTime,new Date())) {//当前年只显示月，日
-                SimpleDateFormat sdf = new SimpleDateFormat("MM-dd HH:mm");  
+                SimpleDateFormat sdf = new SimpleDateFormat("MM-dd");  
                 interval = sdf.format(createTime); 
             } else {
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");  
